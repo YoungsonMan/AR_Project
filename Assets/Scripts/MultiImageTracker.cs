@@ -31,23 +31,27 @@ public class MultiImageTracker : MonoBehaviour
             // 새로운 게임오브젝트를 트래킹한 이미지의 자식으로 생성
             switch (imageName)
             {
-                case "Player":
+                case "QR_player":
                     GameObject player = Instantiate(playerPrefab, trackedImage.transform.position, trackedImage.transform.rotation);
+                    player.transform.parent = trackedImage.transform;
                     break;
-                case "Enemy":
+                case "QR_enemy":
                     GameObject enemy = Instantiate(enemyPrefab, trackedImage.transform.position, trackedImage.transform.rotation);
+                    enemy.transform.parent = trackedImage.transform;
                     break;
 
             }
         }
 
         // 기존이미지가 변경(이동, 회전) 됐을때
+        
         foreach(ARTrackedImage trackedImage in args.updated)
         {
             // 이미지의 변경사항이 있는 경우 자식으로 있던 게임오브젝트 위치 & 회전 갱신
             trackedImage.transform.GetChild(0).position = trackedImage.transform.position;
             trackedImage.transform.GetChild(0).rotation = trackedImage.transform.rotation;
         }
+        
 
         // 기존이미지가 사라졌을 때
         foreach(ARTrackedImage trackedImage in args.removed)

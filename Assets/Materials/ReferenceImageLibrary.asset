@@ -21,19 +21,19 @@ MonoBehaviour:
       m_GuidLow: 5634744515448894578
       m_GuidHigh: 4599833587167336086
     m_SerializedTextureGuid:
-      m_GuidLow: 14525366445202658661
-      m_GuidHigh: 5007537919045394409
+      m_GuidLow: 15439479195815116656
+      m_GuidHigh: 6003867661989159721
     m_Size: {x: 7, y: 7}
-    m_SpecifySize: 0
+    m_SpecifySize: 1
     m_Name: QR_player
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
       m_GuidLow: 5673129280255952408
       m_GuidHigh: 11211456456971847810
     m_SerializedTextureGuid:
-      m_GuidLow: 10427201655294908218
-      m_GuidHigh: 9312241250507479226
+      m_GuidLow: 4968614663608169471
+      m_GuidHigh: 6893293413485650827
     m_Size: {x: 7, y: 7}
-    m_SpecifySize: 0
+    m_SpecifySize: 1
     m_Name: QR_enemy
     m_Texture: {fileID: 0}
