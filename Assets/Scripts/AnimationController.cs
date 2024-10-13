@@ -21,7 +21,7 @@ public class AnimationController : MonoBehaviour
 
     void Update()
     {
-        speedChange();
+        //speedChange();
         Rolling();
     }
 
